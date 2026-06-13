@@ -349,3 +349,10 @@ st.markdown(
     "Étudiant : Mohamed Mahmoud El Atigh (C34621) | "
     "Prof. Ezyn SEGNANE"
 )
+
+try:
+    import tensorflow as tf
+    from tensorflow import keras
+    LSTM_AVAILABLE = True
+except ImportError:
+    LSTM_AVAILABLE = False
